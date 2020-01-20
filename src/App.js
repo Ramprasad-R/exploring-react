@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import "./App.css";
 import ComponentSectionHeader from "./components/ComponentSectionHeader";
 import ItemTeam from "./components/ItemTeam";
+import WhatUspSection from "./components/WhatUspSection";
 export default class App extends React.Component {
   render() {
     return (
@@ -26,29 +27,7 @@ export default class App extends React.Component {
         </header>
         <div className="section-header-spacer"></div>
         <div className="content">
-          <div className="section section-what-usp">
-            <ComponentSectionHeader
-              titleBadge="Do you want to"
-              componentTitle="Learn how to code"
-              titleDescription="Awesome! Let’s do this together. We are here to support you in
-                your coding journey."
-            />
-
-            <div className="component-usp-row">
-              <ItemTeam
-                imageSrc="https://learntocodetogether.nl/assets/team.svg"
-                componentTitle="Get help from experienced developers"
-              />
-              <ItemTeam
-                imageSrc="https://learntocodetogether.nl/assets/community.svg"
-                componentTitle="Learn &amp; share with our community"
-              />
-              <ItemTeam
-                imageSrc="https://learntocodetogether.nl/assets/personal-speed.svg"
-                componentTitle="Personal &amp; at your own speed"
-              />
-            </div>
-          </div>
+          <WhatUspSection />
           <div className="section-line">
             <div className="line "></div>
           </div>
@@ -89,38 +68,23 @@ export default class App extends React.Component {
             />
 
             <div className="component-usp-row">
-              <div className="item team">
-                <img
-                  className="image"
-                  src="https://learntocodetogether.nl/assets/technology.svg"
-                />
-                <div className="component-title title">Technology</div>
-                <div className="description">
-                  We love to experiment and create awesome stuff from the
-                  comfort of our couch.
-                </div>
-              </div>
-              <div className="item team">
-                <img
-                  className="image"
-                  src="https://learntocodetogether.nl/assets/community.svg"
-                />
-                <div className="component-title title">People</div>
-                <div className="description">
-                  It’s always fun to do things together, the excitement and the
-                  collaborations.
-                </div>
-              </div>
-              <div className="item team">
-                <img
-                  className="image"
-                  src="https://learntocodetogether.nl/assets/personal-speed.svg"
-                />
-                <div className="component-title title">Teaching</div>
-                <div className="description">
-                  We like to learn and to teach others the stuff we know.
-                </div>
-              </div>
+              <ItemTeam
+                imageSrc="https://learntocodetogether.nl/assets/technology.svg"
+                componentTitle="Technology"
+                componentDescription="We love to experiment and create awesome stuff from the
+                  comfort of our couch."
+              />
+              <ItemTeam
+                imageSrc="https://learntocodetogether.nl/assets/community.svg"
+                componentTitle="People"
+                componentDescription="It’s always fun to do things together, the excitement and the
+                  collaborations."
+              />
+              <ItemTeam
+                imageSrc="https://learntocodetogether.nl/assets/personal-speed.svg"
+                componentTitle="Teaching"
+                componentDescription="We like to learn and to teach others the stuff we know."
+              />
             </div>
           </div>
         </div>
