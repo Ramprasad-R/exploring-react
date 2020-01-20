@@ -1,6 +1,7 @@
 // App.js
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
+import ComponentSectionHeader from "./components/ComponentSectionHeader";
 export default class App extends React.Component {
   render() {
     return (
@@ -25,18 +26,13 @@ export default class App extends React.Component {
         <div className="section-header-spacer"></div>
         <div className="content">
           <div className="section section-what-usp">
-            <div className="component-section-header">
-              <div className="title-badge">
-                <div className="title-badge-title">Do you want to</div>
-              </div>
-              <h2>
-                <div className="component-title ">Learn how to code</div>
-              </h2>
-              <div className="description">
-                Awesome! Let’s do this together. We are here to support you in
-                your coding journey.
-              </div>
-            </div>
+            <ComponentSectionHeader
+              titleBadge="Do you want to"
+              componentTitle="Learn how to code"
+              titleDescription="Awesome! Let’s do this together. We are here to support you in
+                your coding journey."
+            />
+
             <div className="component-usp-row">
               <div className="item team">
                 <img
@@ -71,18 +67,13 @@ export default class App extends React.Component {
             <div className="line "></div>
           </div>
           <div className="section section-courses-usp">
-            <div className="component-section-header">
-              <div className="title-badge">
-                <div className="title-badge-title">Courses</div>
-              </div>
-              <h2>
-                <div className="component-title ">Our Courses</div>
-              </h2>
-              <div className="description">
-                We have created courses to help you learn, with easy to follow
-                steps and some sparks of fun!
-              </div>
-            </div>
+            <ComponentSectionHeader
+              titleBadge="Courses"
+              componentTitle="Our Courses"
+              titleDescription="We have created courses to help you learn, with easy to follow
+                steps and some sparks of fun!"
+            />
+
             <div className="component-usp-row">
               <div className="item team">
                 <img
@@ -118,19 +109,14 @@ export default class App extends React.Component {
             <div className="line "></div>
           </div>
           <div className="section section-why-usp">
-            <div className="component-section-header">
-              <div className="title-badge">
-                <div className="title-badge-title">Why?</div>
-              </div>
-              <h2>
-                <div className="component-title ">Why do we do this</div>
-              </h2>
-              <div className="description">
-                It’s really simple actually. We just love to combine our passion
+            <ComponentSectionHeader
+              titleBadge="Why?"
+              componentTitle="Why do we do this"
+              titleDescription="It’s really simple actually. We just love to combine our passion
                 for code with our love for teaching. Coding is so much fun when
-                doing it together.
-              </div>
-            </div>
+                doing it together."
+            />
+
             <div className="component-usp-row">
               <div className="item team">
                 <img
