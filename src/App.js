@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import ComponentSectionHeader from "./components/ComponentSectionHeader";
+import ItemTeam from "./components/ItemTeam";
 export default class App extends React.Component {
   render() {
     return (
@@ -34,33 +35,18 @@ export default class App extends React.Component {
             />
 
             <div className="component-usp-row">
-              <div className="item team">
-                <img
-                  className="image"
-                  src="https://learntocodetogether.nl/assets/team.svg"
-                />
-                <div className="component-title title">
-                  Get help from experienced developers
-                </div>
-              </div>
-              <div className="item team">
-                <img
-                  className="image"
-                  src="https://learntocodetogether.nl/assets/community.svg"
-                />
-                <div className="component-title title">
-                  Learn &amp; share with our community
-                </div>
-              </div>
-              <div className="item team">
-                <img
-                  className="image"
-                  src="https://learntocodetogether.nl/assets/personal-speed.svg"
-                />
-                <div className="component-title title">
-                  Personal &amp; at your own speed
-                </div>
-              </div>
+              <ItemTeam
+                imageSrc="https://learntocodetogether.nl/assets/team.svg"
+                componentTitle="Get help from experienced developers"
+              />
+              <ItemTeam
+                imageSrc="https://learntocodetogether.nl/assets/community.svg"
+                componentTitle="Learn &amp; share with our community"
+              />
+              <ItemTeam
+                imageSrc="https://learntocodetogether.nl/assets/personal-speed.svg"
+                componentTitle="Personal &amp; at your own speed"
+              />
             </div>
           </div>
           <div className="section-line">
@@ -75,34 +61,19 @@ export default class App extends React.Component {
             />
 
             <div className="component-usp-row">
-              <div className="item team">
-                <img
-                  className="image"
-                  src="https://learntocodetogether.nl/assets/expand-horizon.svg"
-                />
-                <div className="component-title title">
-                  Learn new skills and expand your horizon
-                </div>
-              </div>
-              <div className="item team">
-                <img
-                  className="image"
-                  src="https://learntocodetogether.nl/assets/developers.svg"
-                />
-                <div className="component-title title">
-                  Follow courses created by experienced developers
-                </div>
-              </div>
-              <div className="item team">
-                <img
-                  className="image"
-                  style={{ width: "200px" }}
-                  src="https://learntocodetogether.nl/assets/step-by-step.svg"
-                />
-                <div className="component-title title">
-                  Fun, hands on and easy to follow
-                </div>
-              </div>
+              <ItemTeam
+                imageSrc="https://learntocodetogether.nl/assets/expand-horizon.svg"
+                componentTitle="Learn new skills and expand your horizon"
+              />
+              <ItemTeam
+                imageSrc="https://learntocodetogether.nl/assets/developers.svg"
+                componentTitle="Follow courses created by experienced developers"
+              />
+              <ItemTeam
+                imageSrc="https://learntocodetogether.nl/assets/step-by-step.svg"
+                componentTitle="Fun, hands on and easy to follow"
+                imageItemStyle={{ width: "200px" }}
+              />
             </div>
           </div>
           <div className="section-line">
